@@ -32,4 +32,8 @@ export class TypeaheadComponent implements OnInit {
       .subscribe(users => this.options = users.map(user => user.name));
   }
 
+  handleSubmit($event: MouseEvent) {
+    $event.preventDefault();
+  }
+
 }
