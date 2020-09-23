@@ -1,0 +1,29 @@
+<div>
+  <mat-toolbar color="primary">
+    <span>RxJS</span>
+    <button mat-button
+            routerLink="/observable"
+            routerLinkActive="active">Observable Example</button>
+    <button mat-button
+            routerLink="/typeahead"
+            routerLinkActive="active">Type Ahead</button>
+    <span class="extra-spacer"></span>
+    <button mat-icon-button
+            (click)="handleSomeOtherEventClick()">
+      <mat-icon>play_circle_outline
+      </mat-icon>
+    </button>
+    <button mat-icon-button
+            (throttleClick)="handleRefreshClick()">
+      <mat-icon>refresh</mat-icon>
+    </button>
+  </mat-toolbar>
+</div>
+<!-- The routed views render in the <router-outlet>-->
+<div style="padding: 10px; min-height: 300px;">
+  <router-outlet></router-outlet>
+</div>
+<div style="display: flex; align-items: center; padding: 10px;">
+  <app-footer class="extra-spacer"></app-footer>
+  <span class="version-info">Angular Version: {{version}}</span>
+</div>
