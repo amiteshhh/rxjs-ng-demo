@@ -1,5 +1,5 @@
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
-// @import '~@angular/material/prebuilt-themes/purple-green.css';
+// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~@angular/material/prebuilt-themes/purple-green.css';
 // @import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
 
 body {
@@ -11,6 +11,16 @@ body {
   font-size: 8pt;
   float: right;
   margin: 8px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .flex {
@@ -27,9 +37,9 @@ body {
 }
 
 // [routerlink].active {
-  //   font-weight: 600;
-  //   color: aliceblue;
-  // }
+//   font-weight: 600;
+//   color: aliceblue;
+// }
 
 [routerlink].active::after {
   content: ' ';
