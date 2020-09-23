@@ -23,7 +23,7 @@ export class TypeaheadComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getUsers();
+    // this.getUsers();
   }
 
   private getUsers(query?: string) {
