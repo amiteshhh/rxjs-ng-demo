@@ -36,6 +36,12 @@ body {
   flex: 1 1 auto;
 }
 
+em {
+  background: yellow;
+  padding: 0 10px;
+  color: black;
+}
+
 // [routerlink].active {
 //   font-weight: 600;
 //   color: aliceblue;

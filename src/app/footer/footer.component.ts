@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BroadcastService } from '../broadcast.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,5 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent {
   refreshTS = 'never';
-  constructor() { }
+  constructor(broadcastService: BroadcastService) {
+    broadcastService.on('refresh').subscribe(data => this.refreshTS = data);
+  }
 }
