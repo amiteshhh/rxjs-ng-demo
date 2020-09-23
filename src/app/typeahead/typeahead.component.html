@@ -1,1 +1,18 @@
-<p>typeahead works!</p>
+<form>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Select User</mat-label>
+        <input matInput
+               autocomplete="off"
+               placeholder="type to search"
+               [formControl]="formControl"
+               [matAutocomplete]="matAutocompleteRef">
+        <mat-autocomplete #matAutocompleteRef="matAutocomplete">
+            <mat-option>Total: {{options?.length || 0}}</mat-option>
+            <mat-option *ngFor="let option of options"
+                        [value]="option">
+                {{option}}
+            </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+</form>
