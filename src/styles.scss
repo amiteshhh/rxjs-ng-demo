@@ -26,9 +26,19 @@ body {
   flex: 1 1 auto;
 }
 
-[routerlink].active {
-  font-weight: 600;
-  color: aliceblue;
+// [routerlink].active {
+  //   font-weight: 600;
+  //   color: aliceblue;
+  // }
+
+[routerlink].active::after {
+  content: ' ';
+  position: absolute;
+  height: 2px;
+  background: #ff4081;
+  bottom: -14px;
+  left: 0;
+  right: 0;
 }
 
 

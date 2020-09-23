@@ -5,22 +5,20 @@ import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DemoMaterialModule } from './material.module';
-import { BasicObservableComponent } from './basic-observable/basic-observable.component';
-import { ThrottleClickDirective } from './throttle-click.directive';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { delay } from 'rxjs/operators';
-import { TypeaheadComponent } from './typeahead/typeahead.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { FooterComponent } from './footer/footer.component';
+import { BasicObservableComponent } from './basic-observable/basic-observable.component';
+import { TypeaheadComponent } from './typeahead/typeahead.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BasicObservableComponent,
-    ThrottleClickDirective,
-    TypeaheadComponent,
     FooterComponent,
+    BasicObservableComponent,
+    TypeaheadComponent,
   ],
   imports: [
     BrowserModule,
