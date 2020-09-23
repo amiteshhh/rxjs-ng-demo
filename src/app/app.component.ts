@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { VERSION } from '@angular/core';
-import { BroadcastService } from './broadcast.service';
 
 @Component({
   selector: 'app-root',
@@ -11,19 +10,16 @@ export class AppComponent {
   version = VERSION.full;
 
   constructor(
-    private broadcastService: BroadcastService
   ) {
 
   }
 
   handlePlayClick() {
-    console.log('emittin throttled refresh');
-    this.broadcastService.emit('play');
+    console.log('Emittin play');
   }
 
   handleRefreshClick() {
-    console.log('emittin throttled refresh');
-    this.broadcastService.emit('refresh', (new Date()).toLocaleTimeString());
+    console.log('Emitting refresh');
   }
 
 }

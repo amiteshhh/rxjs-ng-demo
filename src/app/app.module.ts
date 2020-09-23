@@ -12,7 +12,6 @@ import { environment } from 'src/environments/environment';
 import { FooterComponent } from './footer/footer.component';
 import { BasicObservableComponent } from './basic-observable/basic-observable.component';
 import { TypeaheadComponent } from './typeahead/typeahead.component';
-import { ThrottleClickDirective } from './throttle-click.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,6 @@ import { ThrottleClickDirective } from './throttle-click.directive';
     FooterComponent,
     BasicObservableComponent,
     TypeaheadComponent,
-    ThrottleClickDirective,
   ],
   imports: [
     BrowserModule,
