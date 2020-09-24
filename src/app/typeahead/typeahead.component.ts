@@ -24,6 +24,10 @@ export class TypeaheadComponent implements OnInit {
 
   ngOnInit(): void {
     // this.getUsers();
+    this.formControl.valueChanges
+      .subscribe(value => {
+        console.log('Input value changes', value);
+      });
   }
 
   private getUsers(query?: string) {

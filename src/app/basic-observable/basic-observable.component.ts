@@ -8,7 +8,9 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 export class BasicObservableComponent implements OnInit, AfterViewInit {
   counter = 0;
   refreshTS = 'never';
-  constructor() { }
+  constructor(
+
+  ) { }
 
   ngOnInit(): void {
   }

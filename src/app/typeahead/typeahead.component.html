@@ -8,7 +8,7 @@
                [formControl]="formControl"
                [matAutocomplete]="matAutocompleteRef">
         <mat-autocomplete #matAutocompleteRef="matAutocomplete">
-            <mat-option>Total: {{options?.length || 0}}</mat-option>
+            <mat-option>Options Available: {{options?.length || 0}}</mat-option>
             <mat-option *ngFor="let option of options"
                         [value]="option">
                 {{option}}
