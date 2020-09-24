@@ -6,12 +6,13 @@
                autocomplete="off"
                placeholder="type to search"
                [formControl]="formControl"
+               (input)="handleInputChange()"
                [matAutocomplete]="matAutocompleteRef">
         <mat-autocomplete #matAutocompleteRef="matAutocomplete">
             <mat-option>Options Available: {{options?.length || 0}}</mat-option>
             <mat-option *ngFor="let option of options"
-                        [value]="option">
-                {{option}}
+                        [value]="option.name">
+                {{option.name}}
             </mat-option>
         </mat-autocomplete>
     </mat-form-field>

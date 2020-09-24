@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { VERSION } from '@angular/core';
+import { MessageService } from './message.service';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ export class AppComponent {
   version = VERSION.full;
 
   constructor(
+    private messageService: MessageService
   ) {
 
   }
@@ -20,6 +22,7 @@ export class AppComponent {
 
   handleRefreshClick() {
     console.log('Emitting refresh');
+    this.messageService.dispatchEvent('refresh', (new Date()).toLocaleTimeString());
   }
 
 }
