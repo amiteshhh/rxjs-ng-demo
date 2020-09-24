@@ -14,13 +14,14 @@
       </mat-icon>
     </button>
     <button mat-icon-button
-            (throttleClick)="handleRefreshClick()">
+            (click)="handleRefreshClick()">
       <mat-icon>refresh</mat-icon>
     </button>
   </mat-toolbar>
 </div>
 <!-- The routed views render in the <router-outlet>-->
-<div style="padding: 10px; min-height: 300px;">
+<div id="routerContainer"
+     style="padding: 10px; min-height: 300px;">
   <router-outlet></router-outlet>
 </div>
 <div class="footer-container">
